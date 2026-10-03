@@ -14,7 +14,7 @@ export default function Home() {
   const [internships, setInternships] = useState<Internship[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/internships")
+    fetch("https://internship-tracker-jkec.onrender.com/api/internships")
       .then((response) => response.json())
       .then((data) => setInternships(data));
   }, []);
